@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta charset="utf-8">
+  <title>Group One Login Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Css/w3.css">
+    <link rel="stylesheet" href="./Css/style.css">
+  </head>
+  <body>
+
+          <div class="wrapper" id="myApp">
+             <div class="container">
+               <h1 class="w3-blue">Login to my webpage</h1>
+               <input v-model="Username"  class="form-control" type="text" placeholder="Username"><br>
+               <input v-model="password" class="form-control" type="password" placeholder="password" required><br>
+               <button @click="DisplayUser" type="button" class="btn btn-lg btn-block btn-success" >Submit</button>
+
+             </div>
+             <div class="container">
+               <h1 class="w3-red">Confirm the info entered!</h1>
+               <span> {{Display}}</span>
+
+
+             </div>
+           </div>
+
+
+<script src="vue.js"></script>
+<script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
